@@ -19,4 +19,7 @@ describe('sumAll', () => {
   test('returns ERROR with non-number parameters', () => {
     expect(sumAll(10, [90, 1])).toEqual('ERROR');
   });
-});
+  //there is no test for non-integer values in the original file, so I added one
+  test('returns ERROR with non-integer parameters', () => {
+    expect(sumAll(2.5, 4)).toEqual('ERROR');
+  });});
